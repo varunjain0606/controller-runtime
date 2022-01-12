@@ -47,6 +47,7 @@ func (r *Result) IsZero() bool {
 type Request struct {
 	// NamespacedName is the name and namespace of the object to reconcile.
 	types.NamespacedName
+	Cluster string
 }
 
 /*
